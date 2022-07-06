@@ -256,7 +256,7 @@ nav div:hover::after {
     position: absolute;
     top: 35px;
     left: -100px;
-    z-index: 150;
+    z-index: 90;
     height: 350px;
     width: 5px;
     background-color: #8491A0;
@@ -267,7 +267,7 @@ nav div:hover::after {
     position: absolute;
     top: 35px;
     right: -100px;
-    z-index: 150;
+    z-index: 90;
     height: 350px;
     width: 5px;
     background-color: #8491A0;
