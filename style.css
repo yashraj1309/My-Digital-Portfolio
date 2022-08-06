@@ -290,7 +290,7 @@ nav div:hover::after {
 /* certificates */
 
 .certificate {
-    height: 80vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,13 +317,36 @@ nav div:hover::after {
 }
 
 .certificate div img{
-    margin: 1em 2em;
+    margin: 1.5em 2em;
     transition: transform .4s;
 }
 
 .certificate div img:hover {
     transform: scale(1.1);
     box-shadow: 0px 5px 10px #689af8;
+}
+.amcat {
+    width: 50%;
+    font-size: 1em;
+    height: 2em;
+    padding: 10px 5px 0 5px;
+    margin: .5em auto;
+    border: 2px solid #689af8;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: .3s;
+    cursor: pointer;
+}
+.amcat a {
+    text-decoration: none;
+    color: #8491A0;
+}
+.amcat:hover {
+    transform: scaleX(1.05);
+}
+.amcat:hover a{
+    color: white;
 }
 
 /* Contact Form */
@@ -402,7 +425,7 @@ footer .abc {
     color: #8491A0;
     font-size: 1em;
     letter-spacing: .09em;
-    margin-left: 8em;
+    margin-left: 4em;
     margin-bottom: 2em;
 }
 
