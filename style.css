@@ -644,7 +644,7 @@ footer .logofooter div a svg {
 }
 
 .certificate h1 {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin-bottom: .8em;
 }
 .certificate h1::after {
@@ -652,8 +652,9 @@ footer .logofooter div a svg {
 }
 
 .certificate div img{
-    margin: 1em 1em;
-    width: 90%;
+    margin: 1em 2.5em;
+    width: 80% !important;
+    height: auto !important;
 }
 
 .amcat {
