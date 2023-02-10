@@ -473,13 +473,241 @@ footer .logofooter {
     cursor: pointer; 
     border-radius: 1px;
 }
-
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .leetcode:hover {
     background-color: #25F1E7;
 }
 
 footer .logofooter div a svg {
-    margin-left: -5px;
-    margin-right: -5px;
+    margin-left: 1em;
+    margin-right: 1em;
     fill: white;
+}
+
+
+@media only screen and (max-device-width: 812px) {
+    .progress-bar {
+        display: none;
+    }
+    /* Navbar */
+
+    nav {
+        box-sizing: border-box;
+        position: absolute;
+        height: 10vh;
+        padding: 8px 0;
+        font-size: .8rem;
+        width: 100% !important;
+    }
+
+    nav::before {
+        width: 50%;
+    }
+
+    nav h1 {
+        margin-right: 0;
+    }
+
+    nav div {display: none;}
+
+    /* Main - Container */
+
+    .main-container {
+        height: 70vh;
+        padding: 1em 2em 2em 2em;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1em solid rgb(36, 36, 36);
+        text-align: center;
+    }
+
+    .main-container img {
+        margin-right: 0;
+        width: 200px;
+        height: 200px;
+    }
+    .main-container div h1 {
+        font-size: 1.2em;
+    }
+
+    .main-container div p {
+        margin-top: 2em;
+        font-size: .8em;
+        letter-spacing: .005em;
+    }
+
+
+    /* Work Experience */
+
+    .experience-container {
+        box-sizing: border-box;
+        width: 100% !important;
+        border-bottom: 1em solid rgb(36, 36, 36);
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .experience-container h3 {
+        font-size: .8em;
+    }
+    .experience-container h1 {
+        font-size: 1.8em;
+        letter-spacing: 0.01em;
+        margin-bottom: 0 !important;
+    } 
+
+    /* Experience Container > Work Container */
+
+    .work-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    .work-container .con {
+        max-width: 80% !important;
+        margin-top: 30px;
+    }
+    .exp-num {
+        font-size: 3em;
+    }
+    .con h3 {
+        font-size: 1.2em;
+        letter-spacing: 0.01em;
+    }
+    .con div p {
+        font-size: .8em;
+        margin-top: 1em;
+    }
+
+    /* Skill Container */
+
+.skill-container {
+    box-sizing: border-box;
+    margin-top: 2em;
+    height: 75vh;
+    width: 100%;
+    margin-bottom: 1em;
+    border-bottom: 1em solid rgb(36, 36, 36);
+    padding: 0 20px;
+}
+
+.skill-1 {
+    width: 100%;
+    margin: auto auto 2em;
+    flex-direction: column;
+}
+
+.skill-1 h1 {
+    font-size: 1.6em;
+    letter-spacing: .01em;
+    margin-bottom: .7em;
+}
+.skill-1 h1::after {
+    display: none;
+}
+.skill-1 p {
+    margin-bottom: 1em;
+}
+
+.photobanner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(90px, 1fr));
+    gap: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.photobanner svg {
+    margin: auto;
+    height: 75px;
+}
+    
+    /* certificates */
+
+.certificate {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.certificate h1 {
+    font-size: 1.2em;
+    margin-bottom: .8em;
+}
+.certificate h1::after {
+    display: none;
+}
+
+.certificate div img{
+    margin: 1em 1em;
+    width: 90%;
+}
+
+.amcat {
+    width: 60%;
+}
+
+
+/* Contact Form */
+.contact-form form {
+    width: 80%;
+}
+
+
+/* Footer */
+footer {
+    height: 24vh;
+    padding-left: 0;
+    padding-top: 1.5em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .abc {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+footer h1 {
+    margin-right: 0;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+footer .logofooter {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    margin-bottom: 5px;
+}
+
+footer .logofooter div a svg {
+    margin-left: 10px;
+    margin-right: 10px;
+} 
 }
