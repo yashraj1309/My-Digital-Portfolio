@@ -24,3 +24,5 @@ function amountscrolled(){
 window.addEventListener("scroll", function(){
     amountscrolled()
 }, false)
+
+window.location.replace("https://devportfolio-lilac.vercel.app/");
